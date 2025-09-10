@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap");
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  transition: background 0.8s ease;
+}
+
+.container {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 40px;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-box {
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 14px;
+  border: 2px solid #ddd;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  transition: all 0.3s ease;
+  min-width: 260px;
+  direction: rtl;
+  font-weight: bold;
+  text-align: center;
+}
+
+.select-box:hover {
+  border-color: #999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.select-box option {
+  background: #fff;
+  color: #444;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.select-box option:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #666;
+}
